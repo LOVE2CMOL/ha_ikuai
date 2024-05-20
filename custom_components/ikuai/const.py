@@ -115,6 +115,18 @@ BUTTON_TYPES = {
         "device_class": "restart",
         "action_body": {"func_name":"wan","action":"link_pppoe_reconnect","param":{"id":1}}
     },
+    "ikuai_disable_ipv6": {
+        "label": "关闭ipv6",
+        "name": "Disable_ipv6",
+        "device_class": "restart",
+        "action_body": {"func_name":"ipv6","action":"wan_down","param":{"id":"1"}}
+    },
+    "ikuai_enable_ipv6": {
+        "label": "开启ipv6",
+        "name": "Enable_ipv6",
+        "device_class": "restart",
+        "action_body": {"func_name":"ipv6","action":"wan_up","param":{"id":"1"}}
+    },
 }
 
 
